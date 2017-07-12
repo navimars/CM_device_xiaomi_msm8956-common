@@ -224,3 +224,6 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/doubletap2wake"
 
 # Enable real time lockscreen charging current values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
+
+# Inherit from the proprietary version
+-include vendor/xiaomi/msm8956-common/BoardConfigVendor.mk
