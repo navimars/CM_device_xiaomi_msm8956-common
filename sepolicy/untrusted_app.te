@@ -1,1 +1,5 @@
 allow untrusted_app fuseblk:file rw_file_perms;
+
+# GPU
+allow untrusted_app sysfs_gpu:dir search;
+allow untrusted_app sysfs_gpu:file r_file_perms;
