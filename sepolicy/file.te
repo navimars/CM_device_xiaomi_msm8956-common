@@ -2,6 +2,3 @@ type proc_touchpanel, fs_type;
 
 # DT2W
 type sysfs_dt2w, sysfs_type, fs_type;
-
-# GPU
-type sysfs_gpu, sysfs_type, fs_type;

@@ -9,7 +9,3 @@
 
 # DT2W
 /sys/android_touch/doubletap2wake                                     u:object_r:sysfs_dt2w:s0
-
-# GPU
-/sys/class/kgsl/kgsl-3d0/devfreq/max_freq                             u:object_r:sysfs_gpu:s0
-/sys/class/kgsl/kgsl-3d0/devfreq/min_freq                             u:object_r:sysfs_gpu:s0
