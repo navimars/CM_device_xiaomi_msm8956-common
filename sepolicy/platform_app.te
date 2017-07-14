@@ -1,2 +1,6 @@
 allow platform_app fuseblk:dir rw_dir_perms;
 allow platform_app fuseblk:file create_file_perms;
+
+# Some apps ship with shared libraries and binaries that they write out
+# to their sandbox directory and then execute.
+allow platform_app app_data_file:file { rx_file_perms execmod };
