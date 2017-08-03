@@ -146,7 +146,7 @@ on boot
     chmod 0666 /sys/class/leds/led:torch_0/brightness
     chmod 0666 /sys/class/leds/led:torch_1/brightness
     chmod 0666 /sys/class/leds/led:switch/brightness
-    chmod 0666 /sys/class/leds/flashlight/brightness
+chmod 0666 /sys/class/leds/flashlight/brightness
     chown system system /sys/class/leds/red/blink
     chown system system /sys/class/leds/green/blink
     chown system system /sys/class/leds/blue/blink
@@ -157,14 +157,6 @@ on boot
     # DT2W
     chmod 0666 /sys/android_touch/doubletap2wake
     chown system system /sys/android_touch/doubletap2wake
-
-    # KGSL
-    chown system system /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
-    chmod 0660 /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
-    chown system system /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
-    chmod 0660 /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
-    chown system system /sys/class/devfreq/gpubw/min_freq
-    chmod 0660 /sys/class/devfreq/gpubw/min_freq
 
 on post-fs
     start qseecomd
