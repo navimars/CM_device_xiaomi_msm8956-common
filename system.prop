@@ -94,9 +94,11 @@ mm.enable.qcom_parser=1048575
 persist.mm.enable.prefetch=true
 
 # Perf
-ro.min_freq_0=400000
-ro.min_freq_4=400000
 ro.vendor.extension_library=libqti-perfd-client.so
+ro.core_ctl_min_cpu=0
+ro.core_ctl_max_cpu=4
+ro.min_freq_0=691200
+ro.min_freq_4=883200
 
 # Radio
 DEVICE_PROVISIONED=1
