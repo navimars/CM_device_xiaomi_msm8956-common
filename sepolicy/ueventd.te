@@ -1,0 +1,4 @@
+allow ueventd sysfs_dt2w:dir search;
+allow ueventd sysfs_dt2w:file { getattr read open};
+allow ueventd sysfs_charger:dir search;
+allow ueventd sysfs_charger:file rw_file_perms;

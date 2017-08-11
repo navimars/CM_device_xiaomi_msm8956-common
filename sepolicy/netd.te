@@ -1,1 +1,2 @@
+r_dir_file(netd, firmware_file)
 allow netd firmware_file:dir search;

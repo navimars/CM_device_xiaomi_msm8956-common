@@ -156,18 +156,14 @@ on boot
     # DT2W
     chmod 0666 /sys/android_touch/doubletap2wake
     chown system system /sys/android_touch/doubletap2wake
-
-    # KGSL
-    chown system system /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
-    chmod 0660 /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
-    chown system system /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
-    chmod 0660 /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
-    chown system system /sys/devices/soc.0/1c00000.qcom,kgsl-3d0/devfreq/1c00000.qcom,kgsl-3d0/max_freq
-    chmod 0660 /sys/devices/soc.0/1c00000.qcom,kgsl-3d0/devfreq/1c00000.qcom,kgsl-3d0/max_freq
-    chown system system /sys/devices/soc.0/1c00000.qcom,kgsl-3d0/devfreq/1c00000.qcom,kgsl-3d0/min_freq
-    chmod 0660 /sys/devices/soc.0/1c00000.qcom,kgsl-3d0/devfreq/1c00000.qcom,kgsl-3d0/min_freq
-    chown system system /sys/class/devfreq/gpubw/min_freq
-    chmod 0660 /sys/class/devfreq/gpubw/min_freq
+    chmod 0666 /sys/android_touch/sweep2sleep
+    chown system system /sys/android_touch/sweep2sleep
+    chmod 0666 /sys/android_touch/sweep2wake
+    chown system system /sys/android_touch/sweep2wake
+    chmod 0666 /sys/android_touch/vib_strength
+    chown system system /sys/android_touch/vib_strength
+    chmod 0666 /sys/android_touch/wake_gestures
+    chown system system /sys/android_touch/wake_gestures
 
 on post-fs
     start qseecomd

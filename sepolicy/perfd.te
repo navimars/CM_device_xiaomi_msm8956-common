@@ -1,0 +1,2 @@
+allow perfd sysfs_kgsl3d:dir search;
+allow perfd sysfs_kgsl3d:file { getattr read open };
