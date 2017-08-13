@@ -15,10 +15,23 @@
 /sys/android_touch/wake_gestures                                                     u:object_r:sysfs_dt2w:s0
 
 # GPU
-/sys/devices/soc.0/1c00000\.qcom,kgsl-3d0/kgsl/kgsl-3d0/gpuclk                       u:object_r:sysfs_kgsl3d:s0
-/sys/devices/soc.0/1c00000\.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_gpuclk                   u:object_r:sysfs_kgsl3d:s0
+/sys/devices/soc.0/1c00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/gpuclk                        u:object_r:sysfs_kgsl3d:s0
+/sys/devices/soc.0/1c00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_gpuclk                    u:object_r:sysfs_kgsl3d:s0
 
 # Charger
 /sys/devices/soc.0/78db000.usb/power_supply/usb/uevent                               u:object_r:sysfs_charger:s0
 /sys/devices/soc.0/qpnp-smbcharger-16/power_supply/battery/current_now               u:object_r:sysfs_charger:s0
 /sys/devices/soc.0/qpnp-fg-17/power_supply/bms/current_now                           u:object_r:sysfs_charger:s0
+
+# KCAL
+/sys/devices/platform/kcal_ctrl.0/kcal                                               u:object_r:sysfs_kcal:s0
+/sys/devices/platform/kcal_ctrl.0/kcal_cont                                          u:object_r:sysfs_kcal:s0
+/sys/devices/platform/kcal_ctrl.0/kcal_enable                                        u:object_r:sysfs_kcal:s0
+/sys/devices/platform/kcal_ctrl.0/kcal_hue                                           u:object_r:sysfs_kcal:s0
+/sys/devices/platform/kcal_ctrl.0/kcal_invert                                        u:object_r:sysfs_kcal:s0
+/sys/devices/platform/kcal_ctrl.0/kcal_min                                           u:object_r:sysfs_kcal:s0
+/sys/devices/platform/kcal_ctrl.0/kcal_sat                                           u:object_r:sysfs_kcal:s0
+/sys/devices/platform/kcal_ctrl.0/kcal_val                                           u:object_r:sysfs_kcal:s0
+
+# Thermal
+/data/decrypt.txt                                                                    u:object_r:thermal_file:s0

@@ -3,3 +3,5 @@ allow untrusted_app sysfs_kgsl3d:dir search;
 allow untrusted_app sysfs_kgsl3d:file { getattr read open };
 allow untrusted_app sysfs_charger:dir search;
 allow untrusted_app sysfs_charger:file { getattr read open };
+allow untrusted_app sysfs_kcal:dir search;
+allow untrusted_app sysfs_kcal:file { getattr read open };

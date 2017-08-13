@@ -9,3 +9,9 @@ type sysfs_kgsl3d, sysfs_type, fs_type;
 
 # Charger
 type sysfs_charger, sysfs_type, fs_type;
+
+# KCAL
+type sysfs_kcal, sysfs_type, fs_type;
+
+# Thermal
+type thermal_file, file_type, data_file_type;

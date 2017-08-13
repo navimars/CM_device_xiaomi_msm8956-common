@@ -1,2 +1,2 @@
 allow hvdcp sysfs_charger:dir search;
-allow hvdcp sysfs_charger:file { getattr read open };
+allow hvdcp sysfs_charger:file rw_file_perms;
