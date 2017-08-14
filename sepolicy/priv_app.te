@@ -23,5 +23,3 @@ allow priv_app exfat:file { create getattr unlink };
 # DT2W
 allow priv_app sysfs_dt2w:dir search;
 allow priv_app sysfs_dt2w:file { getattr read open };
-allow priv_app input_device:dir search;
-allow priv_app input_device:chr_file { getattr read open };
