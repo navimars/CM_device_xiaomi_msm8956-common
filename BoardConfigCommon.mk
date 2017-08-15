@@ -233,6 +233,3 @@ TARGET_USES_INTERACTION_BOOST := true
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/msm8956-common/BoardConfigVendor.mk
-
-# DTS TruMedia
-BOARD_USES_SRS_TRUEMEDIA := true
