@@ -120,3 +120,11 @@ if [ -f /system/etc/mbn_ota.txt ] && [ ! -f /data/misc/radio/modem_config/mbn_ot
     chown radio.radio /data/misc/radio/modem_config/mbn_ota.txt
 fi
 echo 1 > /data/misc/radio/copy_complete
+
+# Set Permissive for Goodix
+if [ "`cat /proc/cmdline | grep "androidboot.fpsensor=fpc"`" ]; then
+	setprop persist.sys.fp.sensor fpc
+else
+	setenforce 0
+	setprop persist.sys.fp.sensor goodix
+fi
