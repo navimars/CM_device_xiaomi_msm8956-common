@@ -383,6 +383,7 @@
         <item>"/system/framework/oat/arm64/services.odex"</item>
         <item>"/system/framework/arm64/boot.oat"</item>
         <item>"/system/framework/arm64/boot-core-libart.oat"</item>
+        <item>"/system/framework/arm64/boot-QPerformance.oat"</item>
     </string-array>
 
     <!-- Flag specifying whether VoLTE is available on device -->
@@ -410,7 +411,7 @@
 
     <!-- Whether cpu boost is enabled for AppLaunch -->
     <bool name="config_enableCpuBoostForAppLaunch">true</bool>
-    <integer name="launchboost_timeout_param">2000</integer>
+    <integer name="launchboost_timeout_param">1000</integer>
     <integer-array name="launchboost_param_value">
         <item>0x40C00000</item>
         <item>0x00000001</item>
@@ -426,7 +427,7 @@
 
     <!-- Whether disablepacking is enabled or not -->
     <bool name="config_disablePacking">true</bool>
-    <integer name="disablepacking_timeout_param">5000</integer>
+    <integer name="disablepacking_timeout_param">3000</integer>
     <integer-array name="launchboost_packing_param_value">
         <item>0x40C04000</item>
         <item>0x00000001</item>
@@ -440,7 +441,7 @@
 
     <!-- Whether cpu boost is enabled for animation. -->
     <bool name="config_enablePerfBoostForAnimation">true</bool>
-    <integer name="animationboost_timeout_param">600</integer>
+    <integer name="animationboost_timeout_param">250</integer>
     <integer-array name="animationboost_param_value">
         <item>0x40C00000</item>
         <item>0x00000001</item>
@@ -452,7 +453,7 @@
 
     <!-- Whether cpu boost is enabled for overscroller fling. -->
     <bool name="config_enableCpuBoostForOverScrollerFling">true</bool>
-    <integer name="flingboost_timeout_param">0</integer>
+    <integer name="flingboost_timeout_param">250</integer>
     <integer-array name="flingboost_param_value">
         <item>0x40C00000</item>
         <item>0x00000001</item>
@@ -464,7 +465,7 @@
 
     <!-- Whether cpu boost is enabled for horizontal scroll. -->
     <bool name="config_enableCpuBoostForScroller">true</bool>
-    <integer name="scrollboost_timeout_param">0</integer>
+    <integer name="scrollboost_timeout_param">250</integer>
     <integer-array name="scrollboost_param_value">
         <item>0x40C00000</item>
         <item>0x00000001</item>
