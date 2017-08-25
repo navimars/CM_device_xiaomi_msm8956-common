@@ -173,6 +173,6 @@ service perfd /system/vendor/bin/perfd
     class main
     user root
     group root readproc
-    disabled
+    group system
     socket perfd seqpacket 0666 root system
     writepid /dev/cpuset/system-background/tasks
