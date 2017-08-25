@@ -476,7 +476,8 @@
     </integer-array>
 
     <!-- Whether cpu boost is enabled for PanelView fling -->
-    <bool name="config_enableCpuBoostForPanelViewFling">false</bool>
+    <bool name="config_enableCpuBoostForPanelViewFling">true</bool>
+    <integer name="panelview_scrollboost_timeout_param">0</integer>
     <integer-array name="panelview_flingboost_param_value">
         <item>0x40C00000</item> <!-- SCHEDBOOST resource opcode-->
         <item>0x1</item>        <!-- SCHEDBOOST resource value-->
