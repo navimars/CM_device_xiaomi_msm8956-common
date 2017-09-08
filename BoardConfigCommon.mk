@@ -45,7 +45,7 @@ TARGET_BOOTLOADER_BOARD_NAME := msm8952
 TARGET_NO_BOOTLOADER := true
 
 # Kernel
-BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 ramoops_memreserve=4M boot_cpus=0-3,4-5 no_console_suspend
+BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 ramoops_memreserve=4M boot_cpus=0,1,2,3,4,5 no_console_suspend
 # SELinux Mode
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 # Darkness Mode
